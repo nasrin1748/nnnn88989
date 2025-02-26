@@ -1,4 +1,4 @@
 def fun():
-     import code
-     print(code.interact())
+    import code
+    code.interact(local=dict(globals(), **locals()))
 fun()
